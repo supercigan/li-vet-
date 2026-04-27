@@ -39,6 +39,22 @@ body {
   overflow-x: hidden;
 }
 
+/* ── PHOSPHOR ICONS ──────────────────────────────────────── */
+
+.ph-duotone {
+  color: var(--copper);
+  font-size: 32px;
+}
+
+.ph-duotone::after {
+  opacity: 0.25;
+}
+
+.icon-sm { font-size: 20px; }
+.icon-md { font-size: 32px; }
+.icon-lg { font-size: 48px; }
+.icon-xl { font-size: 96px; }
+
 /* ── TYPOGRAPHY ─────────────────────────────────────────── */
 
 h1, h2, h3 {
@@ -241,6 +257,7 @@ em {
 
 .statement {
   min-height: 80vh;
+  max-height: 90vh;
   background: var(--plum-dark);
   display: grid;
   grid-template-columns: 1fr;
@@ -431,12 +448,14 @@ em {
   line-height: 1;
 }
 
-.service-icon svg {
+.service-icon svg,
+.service-icon .ph-duotone {
   display: block;
   color: var(--copper);
 }
 
-.service-card.featured .service-icon svg {
+.service-card.featured .service-icon svg,
+.service-card.featured .service-icon .ph-duotone {
   color: var(--plum);
 }
 
@@ -523,6 +542,10 @@ em {
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  color: var(--copper-light);
+}
+
+.eq-icon .ph-duotone {
   color: var(--copper-light);
 }
 
@@ -850,8 +873,8 @@ a.contact-item:hover {
   .visual-accent {
     position: relative;
     z-index: 1;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     background: rgba(192, 112, 64, 0.1);
     border-radius: 50%;
     border: 1px solid rgba(192, 112, 64, 0.2);
@@ -861,8 +884,12 @@ a.contact-item:hover {
   }
 
   .hero-paw {
-    color: rgba(240, 216, 192, 0.65);
+    color: rgba(240, 216, 192, 0.65) !important;
     animation: pawPulse 4s ease-in-out infinite;
+  }
+
+  .hero-paw::after {
+    opacity: 0.2;
   }
 
   @keyframes pawPulse {

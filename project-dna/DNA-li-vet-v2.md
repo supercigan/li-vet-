@@ -28,13 +28,13 @@
 
 | Role | Font | Weight |
 |------|------|--------|
-| Nadpisy h1–h3 | **Instrument Serif** | 400 (italic pro em) |
+| Nadpisy h1–h3 | **Crimson Pro** | 400 (italic pro em) |
 | Tělo textu | **Outfit** | 300, 400, 500, 600, 700 |
 
 ## Sekce (pořadí)
 
 1. Nav — transparent → plum-dark při scrollu; gap: clamp(1rem,3vw,2.5rem); CTA jako outlined border
-2. Statement — plum-dark bg, h1 max-width:16ch text-wrap:balance; hero visual = paw-print SVG v kruhu (rgba copper)
+2. Statement — plum-dark bg, h1 max-width:16ch text-wrap:balance; hero visual = ph-paw-print icon-xl Phosphor duotone v kruhu
 3. Trust bar — plum bg, 4 fakta: "8 specializací / Pes·Kočka / Osobní přístup / Rodinná ordinace"
 4. Naše služby — featured pattern: Preventivní program (shield-check 48px, btn "Zjistit více") + 7 karet uniform grid
 5. Vybavení — plum-dark bg, 2→3→5 col grid; všechny ikony inline Lucide SVG 22px
@@ -43,9 +43,24 @@
 8. Footer — plum-dark, 3 sloupce
 
 ## Ikony
-- Servisy (32px): scissors, eye, smile, sparkles, activity, package, heart-pulse, shield-check
-- Vybavení (22px): eye, waves, droplet, microscope, scale, flame, scan-line, zap, monitor, scan
-- Všechny inline Lucide SVG — zero dependency
+**Phosphor Duotone** — CDN: `@phosphor-icons/web@2.1.2/src/duotone/style.css`
+
+| Sekce | Phosphor ikona | Velikost |
+|-------|---------------|---------|
+| Preventivní program | ph-shield-check | icon-lg (48px) — featured |
+| Chirurgie | ph-scissors | icon-md (32px) |
+| Oftalmologie | ph-eye | icon-md |
+| Stomatologie | ph-tooth | icon-md |
+| Dermatologie | ph-sparkle | icon-md |
+| Diagnostika | ph-microscope | icon-md |
+| Doplňkový prodej | ph-package | icon-md |
+| Hospitalizace | ph-heartbeat | icon-md |
+| Hero vizuál | ph-paw-print | icon-xl (96px) |
+| Vybavení | magnifying-glass, waveform, drop, microscope, scales, flame, scan, tooth, monitor, x-circle | icon-md |
+
+- Servis cards barva: `var(--copper)` / featured: `var(--plum)`
+- Vybavení barva: `var(--copper-light)` (dark bg)
+- Hero paw: `rgba(240,216,192,0.65)` s pawPulse animací
 
 ## GitHub
 https://github.com/supercigan/li-vet-

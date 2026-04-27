@@ -108,6 +108,24 @@ em {
   background: rgba(255,255,255,0.08);
 }
 
+.btn-service-feat {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--plum);
+  color: var(--white);
+  border-radius: 4px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  width: fit-content;
+  margin-top: 0.75rem;
+}
+.btn-service-feat:hover { background: var(--plum-hover); }
+
 /* ── NAV ─────────────────────────────────────────────────── */
 
 #nav {
@@ -171,7 +189,7 @@ em {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1rem, 3vw, 2.5rem);
   list-style: none;
 }
 
@@ -186,15 +204,20 @@ em {
 .nav-link:hover { color: var(--white); }
 
 .cta-link {
-  background: var(--copper);
+  background: transparent;
   color: var(--white) !important;
   padding: 0.45rem 1.1rem;
   border-radius: 4px;
   min-height: 36px;
   display: flex;
   align-items: center;
+  border: 1.5px solid rgba(255,255,255,0.45);
+  transition: border-color 0.2s, background 0.2s;
 }
-.cta-link:hover { background: var(--copper-hover); }
+.cta-link:hover {
+  border-color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
 
 .hamburger {
   display: none;
@@ -217,7 +240,7 @@ em {
 /* ── STATEMENT / HERO ────────────────────────────────────── */
 
 .statement {
-  min-height: 100svh;
+  min-height: 80vh;
   background: var(--plum-dark);
   display: grid;
   grid-template-columns: 1fr;
@@ -261,6 +284,8 @@ em {
   color: var(--white);
   line-height: 1.05;
   margin-bottom: 1.5rem;
+  max-width: 16ch;
+  text-wrap: balance;
 }
 
 .statement-heading em {
@@ -402,9 +427,17 @@ em {
 }
 
 .service-icon {
-  font-size: 2rem;
   margin-bottom: 1rem;
   line-height: 1;
+}
+
+.service-icon svg {
+  display: block;
+  color: var(--copper);
+}
+
+.service-card.featured .service-icon svg {
+  color: var(--plum);
 }
 
 .service-card h3 {
@@ -487,8 +520,10 @@ em {
 }
 
 .eq-icon {
-  font-size: 1.4rem;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  color: var(--copper-light);
 }
 
 .eq-item em {
@@ -787,7 +822,7 @@ a.contact-item:hover {
 @media (min-width: 768px) {
   .statement {
     grid-template-columns: 1fr 1fr;
-    min-height: 100svh;
+    min-height: 80vh;
   }
 
   .statement-visual {
@@ -812,26 +847,27 @@ a.contact-item:hover {
     100% { border-radius: 55% 45% 60% 40% / 40% 60% 55% 45%; }
   }
 
-  .visual-icons {
+  .visual-accent {
     position: relative;
     z-index: 1;
+    width: 180px;
+    height: 180px;
+    background: rgba(192, 112, 64, 0.1);
+    border-radius: 50%;
+    border: 1px solid rgba(192, 112, 64, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .vi {
-    position: absolute;
-    font-size: 3rem;
-    animation: floatIcon 6s ease-in-out infinite;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+  .hero-paw {
+    color: rgba(240, 216, 192, 0.65);
+    animation: pawPulse 4s ease-in-out infinite;
   }
 
-  .vi-1 { top: -120px; left: -80px; animation-delay: 0s; }
-  .vi-2 { top: -40px; right: -100px; animation-delay: 1.5s; }
-  .vi-3 { bottom: -80px; left: -40px; animation-delay: 3s; }
-  .vi-4 { bottom: -120px; right: -60px; animation-delay: 4.5s; font-size: 2.2rem; }
-
-  @keyframes floatIcon {
-    0%, 100% { transform: translateY(0px); }
-    50%       { transform: translateY(-12px); }
+  @keyframes pawPulse {
+    0%, 100% { opacity: 0.65; transform: scale(1); }
+    50%       { opacity: 0.9;  transform: scale(1.04); }
   }
 
   .nav-links { display: flex !important; position: static; background: none; flex-direction: row; padding: 0; }
@@ -843,15 +879,14 @@ a.contact-item:hover {
   .service-card.featured {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: auto auto 1fr;
-    grid-template-rows: auto auto 1fr;
+    grid-template-columns: auto 1fr 1.2fr;
+    grid-template-rows: auto auto auto;
     column-gap: 2rem;
   }
   .service-card.featured .service-icon {
     grid-row: 1;
     grid-column: 1;
-    align-self: center;
-    font-size: 2.5rem;
+    align-self: start;
     margin-bottom: 0;
   }
   .service-card.featured h3 {
@@ -864,6 +899,12 @@ a.contact-item:hover {
     grid-row: 2;
     grid-column: 2;
     margin-bottom: 0;
+  }
+  .service-card.featured .btn-service-feat {
+    grid-row: 3;
+    grid-column: 2;
+    align-self: start;
+    margin-top: 0.75rem;
   }
   .service-card.featured .service-list {
     grid-row: 1 / 4;

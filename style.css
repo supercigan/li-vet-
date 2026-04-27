@@ -42,7 +42,7 @@ body {
 /* ── TYPOGRAPHY ─────────────────────────────────────────── */
 
 h1, h2, h3 {
-  font-family: 'Instrument Serif', Georgia, serif;
+  font-family: 'Crimson Pro', Georgia, serif;
   line-height: 1.15;
   font-weight: 400;
 }
@@ -179,7 +179,7 @@ em {
 }
 
 .logo-text {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Crimson Pro', serif;
   font-size: 1.65rem;
   font-weight: 400;
   color: var(--white);
@@ -278,7 +278,7 @@ em {
 }
 
 .statement-heading {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Crimson Pro', serif;
   font-size: clamp(3rem, 12vw, 7.5rem);
   font-weight: 400;
   color: var(--white);
@@ -354,7 +354,7 @@ em {
 }
 
 .trust-item strong {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Crimson Pro', serif;
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--copper-light);
@@ -441,7 +441,7 @@ em {
 }
 
 .service-card h3 {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Crimson Pro', serif;
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--plum);

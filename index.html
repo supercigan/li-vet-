@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Li-Vet — Veterinární ordinace Uherský Brod</title>
+  <meta name="description" content="Veterinární ordinace Li-Vet s.r.o. v Uherském Brodě. Chirurgie, oftalmologie, stomatologie, dermatologie, diagnostika a preventivní péče pro psy, kočky a drobná zvířata.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#uvod" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 3C9 3 7 5 7 7C7 9.2 8.8 11 11 11C11.4 11 11.7 10.95 12 10.85C12.3 10.95 12.6 11 13 11C15.2 11 17 9.2 17 7C17 5 15 3 15 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <ellipse cx="6" cy="6" rx="2" ry="2.5" stroke="currentColor" stroke-width="1.5"/>
+            <ellipse cx="18" cy="6" rx="2" ry="2.5" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M12 11C12 11 8 13 7 16C6.2 18.2 7.5 20.5 10 21C11 21.3 12 21 12 21C12 21 13 21.3 14 21C16.5 20.5 17.8 18.2 17 16C16 13 12 11 12 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">Li-Vet</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sluzby" class="nav-link">Služby</a></li>
+        <li><a href="#vybaveni" class="nav-link">Vybavení</a></li>
+        <li><a href="#ordinacni-doba" class="nav-link">Ordinační doba</a></li>
+        <li><a href="#kontakt" class="nav-link cta-link">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- STATEMENT / HERO -->
+  <section id="uvod" class="statement">
+    <div class="statement-inner">
+      <p class="statement-label">Veterinární ordinace · Uherský Brod</p>
+      <h1 class="statement-heading">
+        Péče,<br>
+        která <em>skutečně</em><br>
+        záleží.
+      </h1>
+      <p class="statement-sub">Komplexní veterinární péče pro psy, kočky a drobná zvířata. Rodinná ordinace s osobním přístupem v Uherském Brodě.</p>
+      <div class="statement-actions">
+        <a href="tel:739462823" class="btn-primary">📞 739 462 823</a>
+        <a href="#sluzby" class="btn-ghost">Naše služby</a>
+      </div>
+      <div class="statement-hours-strip">
+        <span>🕐 Po–Pá</span>
+        <span class="hours-times">9:00–11:00 &amp; 15:00–17:00</span>
+      </div>
+    </div>
+    <div class="statement-visual">
+      <div class="visual-blob"></div>
+      <div class="visual-icons">
+        <span class="vi vi-1">🐕</span>
+        <span class="vi vi-2">🐈</span>
+        <span class="vi vi-3">🩺</span>
+        <span class="vi vi-4">🐾</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item">
+          <strong>8</strong>
+          <span>specializací</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <strong>Pes · Kočka</strong>
+          <span>drobná zvířata</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <strong>Osobní</strong>
+          <span>přístup</span>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-item">
+          <strong>UB</strong>
+          <span>Pod Valy 1765</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLUZBY -->
+  <section id="sluzby" class="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Co nabízíme</p>
+        <h2>Kompletní péče<br>pro vašeho mazlíčka</h2>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card featured">
+          <div class="service-icon">🐾</div>
+          <h3>Preventivní program</h3>
+          <p>Komplexní preventivní péče, která chrání vašeho mazlíčka po celý život — od štěněte až po seniora.</p>
+          <ul class="service-list">
+            <li>Vakcinace psů, koček a drobných zvířat</li>
+            <li>Odčervování a antiparazitická ochrana</li>
+            <li>Mikročipování a vystavení pasů</li>
+            <li>Diagnostika březosti, inseminace</li>
+            <li>Ultrazvukové čištění zubů</li>
+            <li>Otoskopické a oční vyšetření</li>
+            <li>Výživové poradenství</li>
+            <li>Senior balíček (krev, moč, ultrazvuk, srdce)</li>
+            <li>Diagnostika nemocí přenášených klíšťaty</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔪</div>
+          <h3>Chirurgie měkkých tkání</h3>
+          <p>Komplexní chirurgické výkony prováděné s maximální péčí a bezpečností vašeho zvířete.</p>
+          <ul class="service-list">
+            <li>Kastrace psů, koček a drobných zvířat</li>
+            <li>Mastektomie (odstranění mléčných žláz)</li>
+            <li>Léčba pyometry</li>
+            <li>Císařský řez</li>
+            <li>Kýly</li>
+            <li>Chirurgie GIT</li>
+            <li>Chirurgie urinárního systému</li>
+            <li>Odstranění nádorů</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">👁️</div>
+          <h3>Oftalmologie</h3>
+          <p>Diagnostika a léčba onemocnění očí — od běžných zánětů po specializované operační výkony.</p>
+          <ul class="service-list">
+            <li>Diagnostika onemocnění očí</li>
+            <li>Ultrazvuková diagnostika</li>
+            <li>Korekce víček</li>
+            <li>Výhřez žlázy 3. víčka</li>
+            <li>Enukleace</li>
+            <li>Odstranění novotvarů</li>
+            <li>Léčba vředů rohovky</li>
+            <li>Výplach slzných kanálků</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🦷</div>
+          <h3>Stomatologie</h3>
+          <p>Zdravé zuby jsou základem celkového zdraví. Nabízíme moderní zubní péči pro vaše zvíře.</p>
+          <ul class="service-list">
+            <li>Ultrazvukové odstraňování zubního kamene</li>
+            <li>Extrakce zubů</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔬</div>
+          <h3>Dermatologie</h3>
+          <p>Diagnostika a léčba kožních onemocnění — alergie, infekce, záněty i chronické stavy.</p>
+          <ul class="service-list">
+            <li>Diagnostika kožních onemocnění</li>
+            <li>Kožní seškrab s mikroskopií a barvením</li>
+            <li>Diagnostika mykotických onemocnění</li>
+            <li>Diagnostika pruritu (svědění)</li>
+            <li>Biopsie</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📊</div>
+          <h3>Diagnostika</h3>
+          <p>Moderní diagnostické metody pro přesné a rychlé stanovení diagnózy.</p>
+          <ul class="service-list">
+            <li>RTG vyšetření <em>(již brzy)</em></li>
+            <li>Ultrasonografické vyšetření</li>
+            <li>Rozbor moči a sedimentu</li>
+            <li>Koprologické vyšetření</li>
+            <li>Vaginální cytologie</li>
+            <li>Hematologické a biochemické vyšetření</li>
+            <li>Progesteron, T4 (štítná žláza)</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🛍️</div>
+          <h3>Doplňkový prodej</h3>
+          <p>Vše co váš mazlíček potřebuje — přímo v ordinaci, doporučené naším týmem.</p>
+          <ul class="service-list">
+            <li>Veterinární diety</li>
+            <li>Krmiva a krmné doplňky</li>
+            <li>Vitamíny a výživové suplementy</li>
+            <li>Antiparazitika</li>
+            <li>Chovatelské potřeby</li>
+            <li>Veterinární kosmetika</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏥</div>
+          <h3>Hospitalizace</h3>
+          <p>Péče o zvíře i po náročném zákroku — v prostředí, kde mu bude věnována plná pozornost a odborná péče.</p>
+          <ul class="service-list">
+            <li>Pooperační hospitalizace</li>
+            <li>Monitorace stavu</li>
+            <li>Podávání léků</li>
+            <li>Rekonvalescence</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VYBAVENI -->
+  <section id="vybaveni" class="equipment">
+    <div class="container">
+      <div class="section-header light">
+        <p class="section-label">Technika a zázemí</p>
+        <h2>Vybavení ordinace</h2>
+      </div>
+      <div class="equipment-grid">
+        <div class="eq-item">
+          <span class="eq-icon">🔭</span>
+          <span>Otoskop &amp; Oftalmoskop</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">📡</span>
+          <span>Ultrasonograf</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">🩸</span>
+          <span>Glukometr</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">🔬</span>
+          <span>Mikroskop</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">⚖️</span>
+          <span>Digitální váha</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">♨️</span>
+          <span>Autokláv</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">📲</span>
+          <span>Čtečka mikročipů</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">🦷</span>
+          <span>Ultrazvukový zubní skaler</span>
+        </div>
+        <div class="eq-item">
+          <span class="eq-icon">💡</span>
+          <span>Negatoskop</span>
+        </div>
+        <div class="eq-item eq-coming">
+          <span class="eq-icon">☢️</span>
+          <span>RTG <em>brzy</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDINACNI DOBA + KONTAKT -->
+  <section id="ordinacni-doba" class="schedule-contact">
+    <div class="container">
+      <div class="sc-grid">
+
+        <div class="sc-block hours-block">
+          <p class="section-label">Kdy nás najdete</p>
+          <h2>Ordinační<br>doba</h2>
+          <div class="hours-table">
+            <div class="hours-row open">
+              <span class="day">Pondělí – Pátek</span>
+              <span class="time">9:00 – 11:00</span>
+            </div>
+            <div class="hours-row open">
+              <span class="day">&nbsp;</span>
+              <span class="time">15:00 – 17:00</span>
+            </div>
+            <div class="hours-row closed">
+              <span class="day">Sobota – Neděle</span>
+              <span class="time">Zavřeno</span>
+            </div>
+          </div>
+          <p class="hours-note">V případě urgentního stavu nás kontaktujte telefonicky.</p>
+        </div>
+
+        <div class="sc-block contact-block" id="kontakt">
+          <p class="section-label">Jak nás kontaktovat</p>
+          <h2>Kontakt</h2>
+          <div class="contact-items">
+            <a href="tel:739462823" class="contact-item">
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Telefon</strong>
+                <span>739 462 823</span>
+              </div>
+            </a>
+            <a href="mailto:info@li-vet.cz" class="contact-item">
+              <span class="ci-icon">✉️</span>
+              <div>
+                <strong>E-mail</strong>
+                <span>info@li-vet.cz</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Adresa</strong>
+                <span>Pod Valy 1765<br>688 01 Uherský Brod</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <input type="text" name="jmeno" placeholder="Vaše jméno" required>
+            <input type="tel" name="telefon" placeholder="Telefon">
+            <textarea name="zprava" placeholder="Vaše zpráva nebo dotaz" rows="3" required></textarea>
+            <button type="submit" class="btn-primary">📨 Odeslat zprávu</button>
+            <p class="form-note" id="form-msg"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="map-section">
+    <div class="map-label">
+      <span>📍 Pod Valy 1765, Uherský Brod</span>
+    </div>
+    <div class="map-wrap">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=17.630%2C49.015%2C17.655%2C49.032&layer=mapnik&marker=49.023157%2C17.642546"
+        allowfullscreen
+        loading="lazy"
+        title="Mapa — Li-Vet Uherský Brod">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 3C9 3 7 5 7 7C7 9.2 8.8 11 11 11C11.4 11 11.7 10.95 12 10.85C12.3 10.95 12.6 11 13 11C15.2 11 17 9.2 17 7C17 5 15 3 15 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <ellipse cx="6" cy="6" rx="2" ry="2.5" stroke="currentColor" stroke-width="1.5"/>
+                <ellipse cx="18" cy="6" rx="2" ry="2.5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12 11C12 11 8 13 7 16C6.2 18.2 7.5 20.5 10 21C11 21.3 12 21 12 21C12 21 13 21.3 14 21C16.5 20.5 17.8 18.2 17 16C16 13 12 11 12 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="logo-text">Li-Vet</span>
+          </div>
+          <p>Veterinární ordinace s.r.o.<br>Osobní přístup ke každému pacientovi.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Služby</h4>
+          <ul>
+            <li>Preventivní program</li>
+            <li>Chirurgie měkkých tkání</li>
+            <li>Oftalmologie</li>
+            <li>Stomatologie</li>
+            <li>Dermatologie</li>
+            <li>Diagnostika</li>
+            <li>Doplňkový prodej</li>
+            <li>Hospitalizace</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li>📞 <a href="tel:739462823">739 462 823</a></li>
+            <li>✉️ <a href="mailto:info@li-vet.cz">info@li-vet.cz</a></li>
+            <li>📍 Pod Valy 1765, Uherský Brod</li>
+            <li>🕐 Po–Pá: 9–11 &amp; 15–17</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Veterinární ordinace Li-Vet s.r.o.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
